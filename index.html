@@ -9,23 +9,54 @@
     <script src="https://static.line-scdn.net/liff/edge/versions/2.5.0/sdk.js"></script>
     <script>
         async function main() {
-                                         // Liff ID
-            await liff.init({ liffId: "1657211238-dYmz2wGa" })
+            await liff.init({ liffId: "1656870942-pBymm9wN" })
             await liff.shareTargetPicker([
                 {
                     type: "flex",
                     // ข้อความก่อนกดอ่าน
-                    altText: "มาแล้วพี่จ๋า",
-                    contents: 
-                    // โค้ดจาก line bot designer
-                    {
+                    altText: "พี่ว่างไหม",
+                    contents: {
   "type": "bubble",
+  "direction": "ltr",
   "hero": {
     "type": "image",
-    "url": "https://media.discordapp.net/attachments/984848322097446943/984848581108301834/02-01_2.jpeg?width=936&height=936",
+    "url": "https://media.discordapp.net/attachments/955856506904002641/955856913579507733/2.png?width=686&height=686",
     "size": "full",
     "aspectRatio": "20:20",
-    "aspectMode": "cover"
+    "aspectMode": "cover",
+    "backgroundColor": "#FFFFFFFF"
+  },
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "spacing": "sm",
+    "contents": [
+      {
+        "type": "text",
+        "text": "แจกเครดิตฟรี 50.-",
+        "weight": "bold",
+        "size": "xl",
+        "color": "#000000FF",
+        "wrap": true,
+        "contents": []
+      },
+      {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "text",
+            "text": "ทำยอด 650 ถอนได้ 250",
+            "weight": "bold",
+            "size": "xl",
+            "color": "#0000009E",
+            "flex": 0,
+            "wrap": true,
+            "contents": []
+          }
+        ]
+      }
+    ]
   },
   "footer": {
     "type": "box",
@@ -37,11 +68,19 @@
         "action": {
           "type": "uri",
           "label": "รับเครดิตฟรี",
-          "uri": "https://bit.ly/3tuU6LP"
+          "uri": "https://liff.line.me/1645278921-kWRPP32q/?accountId=228dmmqw"
         },
-        "flex": 2,
-        "color": "#3ECFDAFF",
+        "color": "#8900FFFF",
         "style": "primary"
+      },
+      {
+        "type": "button",
+        "action": {
+          "type": "uri",
+          "label": "แชร์ให้เพื่อน",
+          "uri": "https://liff.line.me/1656870942-pBymm9wN"
+        },
+        "style": "secondary"
       }
     ]
   }
